@@ -15,7 +15,7 @@ COPY config/config.json /config/config.json
 COPY config/jq.sh /config/jq.sh
 RUN /config/jq.sh
 
-ARG MAP_TILES_VERSION 20180202
+ARG MAP_TILES_VERSION=20180202
 RUN mkdir -p /tiles \
     && curl -L https://github.com/Neo-Type/iOneMySgMap/releases/download/${MAP_TILES_VERSION}/singapore.mbtiles -o /tiles/singapore.mbtiles
 
