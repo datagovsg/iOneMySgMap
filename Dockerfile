@@ -1,4 +1,4 @@
-FROM klokantech/tileserver-gl:v2.3.0
+FROM guangie88/tileserver-gl:x-forwarded-for
 
 RUN set -x \
     && apt-get update \
