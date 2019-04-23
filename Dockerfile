@@ -1,4 +1,4 @@
-FROM guangie88/tileserver-gl:x-forwarded-for
+FROM guangie88/tileserver-gl:x-forwarded-host
 
 RUN set -x \
     && apt-get update \
